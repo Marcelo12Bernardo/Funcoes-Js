@@ -3,12 +3,12 @@ function compareTrue(paramA,paramB) {
   if(paramA === true && paramB === true){
     return true;
   } 
-  return false;
+    return false;
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(vBase,vAltura) {
+  return ( vBase * vAltura ) /2;
 }
 
 // Desafio 3
