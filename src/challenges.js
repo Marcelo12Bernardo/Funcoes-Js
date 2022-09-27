@@ -22,8 +22,8 @@ function concatName(listName = []) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(totWins, totTies) {
+  return (totWins * 3) + (totTies * 1);
 }
 
 // Desafio 6
