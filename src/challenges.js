@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(paramA,paramB) {
-  if(paramA === true && paramB === true){
+  if (paramA === true && paramB === true) {
     return true;
   } 
     return false;
@@ -62,7 +62,7 @@ function fizzBuzz(listNumbers = []) {
   for (let control in listNumbers) {
     if ((listNumbers[control] % 3) === 0 && (listNumbers[control] % 5) === 0) {
       litsResuls.push('fizzBuzz');
-    }else if ((listNumbers[control] % 3) != 0 && (listNumbers[control] % 5) != 0) {
+    }else if ((listNumbers[control] % 3) !== 0 && (listNumbers[control] % 5) != 0) {
       litsResuls.push('bug!');
     }else if((listNumbers[control] % 3) === 0) {
       litsResuls.push('fizz');
@@ -95,8 +95,18 @@ function decode(codify) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(nameTech, nampePerson) {
+  let objList = [];
+
+  if (nameTech.length !== 0 && nampePerson !== ''){
+    nameTech.sort();
+    objList = [];
+    for (const value of nameTech) {
+      objList.push({ tech: value, name: nampePerson });
+    }
+    return objList;
+  }
+  return 'Vazio!';
 }
 
 module.exports = {
