@@ -72,11 +72,26 @@ function fizzBuzz(listNumbers = []) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(codify){
+  for (let ctr = 0; ctr < codify.length; ctr + 1) {
+    codify = codify.replace('a','1');
+    codify = codify.replace('e','2');
+    codify = codify.replace('i','3');
+    codify = codify.replace('o','4');
+    codify = codify.replace('u','5');
+  }
+  return codify;
 }
-function decode() {
-  // seu código aqui
+
+function decode(codify) {
+  for (let ctr = 0; ctr < codify.length; ctr + 1) {
+    codify = codify.replace('1','a');
+    codify = codify.replace('2','e');
+    codify = codify.replace('3','i');
+    codify = codify.replace('4','o');
+    codify = codify.replace('5','u');
+  }
+  return codify;
 }
 
 // Desafio 10
